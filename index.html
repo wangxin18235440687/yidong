@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>中国移动</title>
 	<link rel="stylesheet" href="css/index.css">
-	<script src="js/index.js"></script>
 	<script src="js/animate.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+
 </head>
 <body>
     <!-- 头部开始编写 -->
@@ -129,15 +131,15 @@
 		
          <!-- banner开始编写 -->
 		<div class="banner">
-			<div class="tu1" ><a href=""><img src="img/banner/1.jpg" alt="礼享盛惠 4G+手机节"></a></div>
-			<div class="tu1" ><a href=""><img src="img/banner/2.jpg" alt="礼享盛惠 4G+手机节"></a></div>
+			<div class="tu1" style="left: 0;"><a href=""><img src="img/banner/1.jpg" alt="礼享盛惠 4G+手机节"></a></div>
+			<div class="tu1" ><a href=""><img src="img/banner/7.jpg" alt="礼享盛惠 4G+手机节"></a></div>
+			<div class="tu1" ><a href=""><img src="img/banner/6.jpg" alt="礼享盛惠 4G+手机节"></a></div>
+			<div class="tu1" ><a href=""><img src="img/banner/5.jpg" alt="礼享盛惠 4G+手机节"></a></div>
 			<div class="tu1" ><a href=""><img src="img/banner/3.jpg" alt="礼享盛惠 4G+手机节"></a></div>
 			<div class="tu1" ><a href=""><img src="img/banner/4.jpg" alt="礼享盛惠 4G+手机节"></a></div>
-			<div class="tu1" ><a href=""><img src="img/banner/5.jpg" alt="礼享盛惠 4G+手机节"></a></div>
-			<div class="tu1" ><a href=""><img src="img/banner/6.jpg" alt="礼享盛惠 4G+手机节"></a></div>
-			<div class="tu1" ><a href=""><img src="img/banner/7.jpg" alt="礼享盛惠 4G+手机节"></a></div>
+			<div class="tu1" ><a href=""><img src="img/banner/2.jpg" alt="礼享盛惠 4G+手机节"></a></div>
 			<ol class="indicator">
-				<li title="开学就用青春卡" style="background: #e80375"></li>
+				<li class="dot" title="开学就用青春卡"></li>
 				<li title="欢畅吧，我的话费"></li>
 				<li title="话费流量特权日"></li>
 				<li title="狂飙吧！我的移动光宽带"></li>
@@ -172,7 +174,7 @@
 						<input type="text" placeholder="请输入手机号码" maxlength="11">
 					</div>
 					<div class="inselect">
-						<a href="">50元</a>
+						<a href="" class="default_color">50元</a>
 						<a href="">100元</a>
 						<a href="">300元</a>
 						<a href="">500元</a>
@@ -285,8 +287,8 @@
 
 			</div>
 			</div>
-			<div class="zuobashou2"><i class="iconfont4">&#xe68d;</i></div>
-			<div class="youbashou2"><i class="iconfont4">&#xe600;</i></div>
+			<div class="zuobashou"><i class="iconfont4">&#xe68d;</i></div>
+			<div class="youbashou"><i class="iconfont4">&#xe600;</i></div>
 		</section>
 		<!-- 滚动层结束 -->
 		
@@ -449,24 +451,40 @@
         		<span class="span2">:</span>
         	</div>
         	<ul class="middle">
-        		<li>
-        			<span class="m-left">-</span>
-	        		<span class="m-word">
+        		<div class="middle_box">
+        			<li>
+        				<span class="m-left">-</span>
+	        			<span class="m-word">
 	        			<a href="">中国移动国际公司巴西子公司正式成立</a>
-	        		</span>
-	        		<span class="date">2017-09-28</span>
-        		</li>
-        		<li>
-        			<span class="m-left">-</span>
-	        		<span class="m-word">
-	        			<a href="">中国移动国际公司巴西子公司正式成立</a>
-	        		</span>
-	        		<span class="date">2017-09-28</span>
-        		</li>
+	        			</span>
+	        			<span class="date">2017-09-28</span>
+        			</li>
+        			<li>
+        				<span class="m-left">-</span>
+	        			<span class="m-word">
+	        				<a href="">中国移动“央企楷模”等先进典型积极主动学习十九大精神</a>
+	        			</span>
+	        			<span class="date">2017-10-28</span>
+        			</li>
+        			<li>
+        				<span class="m-left">-</span>
+	        			<span class="m-word">
+	        				<a href="">	也门MTN公司、埃及Etisalat公司以及伯利兹Telemedia公司国际漫游业务开通</a>
+	        			</span>
+	        			<span class="date">2017-10-8</span>
+        			</li>
+        			<li>
+        				<span class="m-left">-</span>
+	        			<span class="m-word">
+	        				<a href="">互联王卡定向免流APP调整通知</a>
+	        			</span>
+	        			<span class="date">2017-11-2</span>
+        			</li>
+        		</div>
         	</ul>
         	<div class="rbtn">
-        		<a href="script:;" class="left">＜</a>
-        		<a href="script:;" class="right">＞</a>
+        		<a href="javascript:;" class="left">＜</a>
+        		<a href="javascript:;" class="right">＞</a>
         	</div>
         </section>
         <!-- 国资动态开始编写 -->
@@ -598,11 +616,14 @@
 			</div>
 		</section>
 	</footer>
-	<div class="zxkf"></div>
+
+
+
+
+		<div class="zxkf"></div>
 <img src="img/61.jpg" alt="" class="d0">
 <img src="img/58.gif" alt="" class="d1">
 <img src="img/59.gif" alt="" class="d2">
 <img src="img/60.gif" alt="" class="d3">
-
 </body>
 </html>

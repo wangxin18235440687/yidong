@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-10-05 11:04:22
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-11-21 08:40:10
+* @Last Modified time: 2017-11-21 08:50:10
 */
 @import url(base.css);
 /* **************************************head开始编写*************************************** */
@@ -26,6 +26,7 @@ header .topbar .topleft{
 	float: left;
 	margin-left: 74px;
 	height: 100%;
+
 }
 header .topbar .topleft a{
 	display: inline-block;
@@ -33,7 +34,7 @@ header .topbar .topleft a{
 	border-right: 1px solid #ececec;
 	font-size: 12px;
 	color: #888;
-	line-height: 26px;
+	line-height: 25px;
 }
 header .topbar .topleft a:hover{
 	color: #25b2fe;
@@ -53,7 +54,7 @@ header .topbar .topright li a{
 	color: #888;
 	border-left: 1px solid #e4dede;
 	padding: 0 6px;
-	line-height: 26px;
+	line-height: 25px;
 }
 header .topbar .topright li:first-child{
 	position: relative;
@@ -66,8 +67,8 @@ header .topbar .topright li:first-child{
      font-style: normal;
      color: #666;
      left: -10px;
-     top: 5px;
-     line-height: 20px;
+     top: 4px;
+     line-height: 18px;
 }
 .iconfont2{
 	 
@@ -91,6 +92,51 @@ header .topbar .topright li:nth-child(2) img{
     height: 15px;
     margin-top: 5px;
     margin-right: 2px;
+}
+header .topbar .topright li:nth-child(2) .hezi_erweima{
+	display: inline-block;
+	height: 25px;
+	position: relative;
+}
+header .topbar .topright li:nth-child(2) .hezi_erweima:hover{
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	background: white;
+}
+header .topbar .topright li .client_erweima{
+	width: 160px;
+	height: 155px;
+	padding: 12px 0 12px 0;
+	box-sizing: border-box;
+	background: white;
+	position: absolute;
+	top: 26px;
+	left: 1px;
+	z-index: 999;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	display: none;
+}
+header .topbar .topright li .client_erweima .zhegai{
+	width: 111px;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	background: white;
+}
+header .topbar .topright li .client_erweima img{
+	width: 100px;
+	height: 100px;
+    
+}
+header .topbar .topright li .client_erweima p{
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	text-align: center;
 }
 header .topbar .topright li a:hover{
 	color: #25b2fe;
@@ -142,7 +188,6 @@ header .container .middle .middleleft .dropdown .topcity .drop2 {
 	border-left: 5px solid transparent;
 	top: 8px;
 	right: 17px;
-
 }
 
 header .container .middle .middleright{
@@ -359,7 +404,9 @@ header .container .navbar ul li .ydsc a:hover{
     padding-top: 11px;
 }
 /* **************************************banner开始编写*************************************** */
-
+.dot{
+	background: #e80375 !important;
+}
 .main .banner{
 	float: left;
 	width: 740px;
@@ -367,12 +414,15 @@ header .container .navbar ul li .ydsc a:hover{
 	background: pink;
 	margin-top: 5px;
 	position: relative;
+	overflow: hidden;
 }
 .main .banner .tu1{
 	position: absolute;
-	left: 0;
+	left: 740px;
 	top: 0;
-	transition: all 0.8s;
+	width: 740px;
+	height: 350px;
+	/* transition: all 0.8s; */
 }
 .main .banner .tu1 img{
     display: inline-block;
@@ -559,6 +609,11 @@ header .container .navbar ul li .ydsc a:hover{
 	line-height: 34px;
 	font-weight: normal;
 }
+.main .quickbtn .chongzhi .czjf .inselect a.default_color{
+	background: #e40077;
+	color: white;
+	border: 1px solid #e40077;
+}
 .main .quickbtn .chongzhi .czjf .inselect a:first-child{
 	margin-left: 12px;
 }
@@ -581,12 +636,16 @@ header .container .navbar ul li .ydsc a:hover{
 	width: 1170px;
 	height: 160px;
 	overflow: hidden;
+	position: relative;
 }
 .main .dongtu .allbox{
 	width: 4720px;
 	height: 100%;
 	background: #dfdfdf;
-	
+	/* transition: all 0.5s; */
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .main .dongtu .allbox .indexbox{
 	float: left;
@@ -595,7 +654,6 @@ header .container .navbar ul li .ydsc a:hover{
 	margin-right: 10px;
 	background: white;
 	z-index: -1;
-	transition: all 2s;
 }
 .main .dongtu .allbox .indexbox:last-child{
 	margin-right: 0;
@@ -636,7 +694,7 @@ header .container .navbar ul li .ydsc a:hover{
 
 
 
-.main .dongtu .zuobashou2{
+.main .dongtu .zuobashou{
 	position: absolute;
 	width: 28px;
 	height: 35px;
@@ -647,7 +705,7 @@ header .container .navbar ul li .ydsc a:hover{
 	cursor: pointer;
 	border-radius: 0px 3px 3px 0;
 } 
-.main .dongtu .youbashou2{
+.main .dongtu .youbashou{
 	position: absolute;
 	width: 28px;
 	height: 35px;
@@ -1153,49 +1211,69 @@ header .container .navbar ul li .ydsc a:hover{
 }
 .main .gonggao  .middle{
 	float: left;
-	
 	height: 36px;
-
+    width: 948px;
+    position: relative;
+    overflow: hidden;
+}
+.main .gonggao  .middle .middle_box{
+	position: absolute;
+    width: 1896px;
+    height: 36px;
+    top: 0;
+    left: 0;
 }
 .main .gonggao  .middle li {
 	float: left;
 	width: 444px;
 	height: 36px;
+	padding: 0 10px 0 20px;
 }
 .main .gonggao  .middle li .m-left{
-	width: 13px;
+	float: left;
+	display: inline-block;
+	/* width: 13px; */
 	height: 36px;
 	color: #0085d0;
 	font-size: 15px;
 	line-height: 36px;
+	margin-right: 5px;
 }
 
 .main .gonggao  .middle li .m-word{
+	float: left;
+	display: inline-block;
     width: 302px;
     height: 36px;
     line-height: 36px;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .main .gonggao  .middle li .m-word a{
 	color: #0085d0;
 	font-size: 15px;
 }
 .main .gonggao  .middle li .m-word a:hover{
-	border-bottom: 1px solid #0085d0;
+	/* border-bottom: 1px solid #0085d0; */
+	text-decoration: underline;
 }
 .main .gonggao  .middle li .date{
-	width: 132px;
+	float: left;
+	display: inline-block;
+	/* width: 132px; */
 	height: 36px;
-	padding-left: 18px;
+	/* padding-left: 18px; */
 	line-height: 36px;
 	color: #CCC;
 	font-size: 15px;
 }
-.main .gonggao  .middle li:first-child{
+/* .main .gonggao  .middle li:first-child{
 	margin-left: 8px;
 }
 .main .gonggao  .middle li:last-child{
 	margin-left: 32px;
-}
+} */
 .main .gonggao .rbtn{
 	float: right;
 	width: 44px;
@@ -1443,6 +1521,7 @@ footer .container .five .right a:hover span{
 	color: #0085d0;
 	border-bottom: 1px solid #0085d0;
 }
+
 
 .zxkf{
     width: 124px;
